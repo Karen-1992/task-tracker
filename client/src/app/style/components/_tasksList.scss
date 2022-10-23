@@ -1,0 +1,76 @@
+.tasks {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    padding-left: 89px;
+
+    .tasks__filter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 30px;
+    }
+}
+
+.tasks__list {
+    border: 2px solid $color-gray;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    .task {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        padding: 25px 30px;
+        border-bottom: 2px solid $color-gray;
+        .task__check {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            gap: 15px;
+        }
+        .task__button {
+            width: 76px;
+            border-radius: 20px;
+        }
+    }
+    .task-content {
+        color: #777;
+    }
+    .task-content_completed {
+        text-decoration: line-through;
+    }
+}
+
+.task-menu {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    &__button {
+        height: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__item {
+            background-color: $color-blue;
+            height: 3px;
+            width: 3px;
+            border-radius: 50%;
+        }
+    }
+
+    .task__modal {
+        top: 20px;
+        right: 0;
+        padding: 0 15px;
+        &__item {
+            padding: 8px 10px;
+        }
+    }
+}

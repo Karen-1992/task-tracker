@@ -1,0 +1,10 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-top: 2px solid $color-hr;
+    @include media-mobile {
+        padding: 31px 0;
+    }
+}

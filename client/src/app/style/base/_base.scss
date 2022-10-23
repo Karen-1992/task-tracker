@@ -1,0 +1,53 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    @extend %font-prim;
+    @include font($size: 1.6rem, $height: 1.92rem);
+    @include media-mobile {
+        @include font($height: 1.5rem, $size: 1.8rem);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    @include font($height: 3.2rem, $size: 3.84rem, $weight: 800);
+    @include media-mobile {
+        @include font($height: 2.4rem, $size: 2.88rem);
+    }
+}
+
+.heading-light {
+    font-weight: 400;
+    color: $color-semi-light;
+}
+
+h2 {
+    @include font($size: 2.8rem, $height: 3.36rem, $weight: 800);
+    @include media-mobile {
+        @include font($height: 2.22rem, $size: 2.64rem);
+    }
+}
+
+.content-sm {
+    @include font($size: 1.4rem, $height: 1.68rem, $weight: 500);
+    @include media-mobile {
+        @include font($height: 1.3rem, $size: 1.56rem);
+    }
+}
+.content-lg {
+    @include font($size: 1.8rem, $height: 2.84rem, $weight: 600);
+    @include media-mobile {
+        @include font($height: 1.6rem, $size: 2.4rem);
+    }
+}

@@ -1,0 +1,52 @@
+.button {
+    @extend %transition;
+    cursor: pointer;
+    background: $color-blue;
+    height: 60px;
+    width: 100%;
+    color: #fff;
+    border-radius: 20px;
+    border-color: $color-blue;
+    &:hover {
+        background: $color-hovered;
+        border-color: $color-hovered;
+    }
+    &_submit {
+        width: 100%;
+    }
+    &_signin {
+        background-color: #fff;
+        height: 40px;
+        width: 120px;
+        border: 2px solid #ebebeb;
+        border-radius: 12px;
+        span {
+            margin-left: 10px;
+        }
+        @include media-mobile {
+            height: 36px;
+            width: 102px;
+        }
+        &:hover {
+            background: $color-gray;
+            border-color: $color-gray;
+        }
+    }
+    &:disabled {
+        opacity: 0.5;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+.link {
+    cursor: pointer;
+    color: #999;
+    &_active {
+        color: $color-blue;
+    }
+    &_disabled {
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,32 @@
+.ico {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.ico-logo {
+    background-image: url("../images/svg/logo.svg");
+    width: 32px;
+    height: 32px;
+    @include media-mobile {
+        width: 28px;
+        height: 28px;
+    }
+}
+.ico-task {
+    background-image: url("../images/svg/task.svg");
+    width: 47.99px;
+    height: 15.97px;
+    @include media-mobile {
+        width: 41.99px;
+        height: 13.97px;
+    }
+}
+.ico-success {
+    background-image: url("../images/svg/success.svg");
+    width: 86.11px;
+    height: 16.26px;
+    @include media-mobile {
+        width: 75.34px;
+        height: 14.23px;
+    }
+}

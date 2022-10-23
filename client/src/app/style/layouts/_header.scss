@@ -1,0 +1,35 @@
+.header {
+    max-width: 1440px;
+    height: 80px;
+    padding: 20px 150px 18px;
+    border-bottom: 2px solid $color-hr;
+    @include media-mobile {
+        height: 70px;
+        padding: 17px 20px 15px;
+    }
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 176px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media-mobile {
+        width: 154px;
+    }
+}
+
+.header__modal {
+    top: 30px;
+    right: 0;
+    padding: 0 20px;
+    &__item {
+        padding: 15px 10px;
+    }
+}
